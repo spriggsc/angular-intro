@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+
+
+    </head>
+    <body ng-app="myPostApp">
+        <div ng-controller="myCtlr">
+            <div ng-repeat="things in objectAppContent">
+                <input type="text" ng-model="addMe" />
+                <input type="button" ng-click="addItem()">
+                <input type="text" ng-model="things.content" />
+
+                <h1>{{things.title}} and {{things.content}}</h1>
+            </div>
+        </div>
+        <h1>HI</h1>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
